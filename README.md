@@ -19,7 +19,7 @@ You can directly refer to both mpiexec.exe (in the msmpi folder) and wannier90.x
    - From the lower scrollable list, find the variable called "Path". Select the corresponding line, and click "Edit..." in the bottom
    - In the pop-up window, click "New"
    - Paste the full directory to the folder "msmpi" in the download (you can use "Browse..." instead). Now you will see that in the end of the list, the full path to msmpi is added.
-   - Click "New" again and this time paste the full directory ofthe folder "wannier90-3.1.0".
+   - Click "New" again and this time paste the full directory of the folder "wannier90-3.1.0".
 2. Open CMD (Command Prompt)
    - Run command "mpiexec". If the evironment variables are set correctly in step 1, it should output "Microsoft MPI Startup Program" with version and options.
    - Run command "wannier90.x". If the evironment variables are set correctly in step 1, it should output "Wannier90: The Maximally Localised Wannier Function Code" with options.
