@@ -34,6 +34,6 @@ mpiexec.exe -np 6 wannier90.x Si.win
 ```
 for parallel computing on 6 CPU cores. "Si.win" is the name of your input file, which must have the extension of ".win". Instead, you can also neglect ".win" in the command. For "postw90.x", the command is similar.
 
-# Compilaion procedure (only for advanced user)
+## Compilaion procedure (only for advanced user)
 
 Please refer to the pdf file in the repository for the detailed steps to compile Wannier90 on windows. The result will be the same as in the download.
