@@ -10,6 +10,8 @@ There are two folders in the download: **msmpi** and **wannier90-3.1.0**. msmpi 
 
 ## Usage
 
+You can directly refer to both mpiexec.exe (in the msmpi folder) and wannier90.x (in the wannier90-3.1.0) folder by their corresponding full path, and then you can jump to step 3 below. To be more convenient, we recommend the procedure below (step 1 and 2) to set up environment variable so that later you do not need to always input the full path in the calculations.
+
 1. Set system environment variables
    - Search "environment variables" in the Windows search bar
    - Go to "Edit the system environment variables"
@@ -24,11 +26,11 @@ There are two folders in the download: **msmpi** and **wannier90-3.1.0**. msmpi 
    - Run command "postw90.x". If the evironment variables are set correctly in step 1, it should output "postw90: Post-processing for the Wannier90 code" with options. If not, go back to step 1.
 3. Go to your calculation folder using "cd" command. For example, let's say "wannier90-3.1.0_windows_x64_parallel\wannier90-3.1.0\examples\example16-noqe". Now, run
 ```
-wannier90.x Si
+wannier90.x Si.win
 ```
 for serial execution, or
 ```
-mpiexec -np 6 wannier90.x Si
+mpiexec.exe -np 6 wannier90.x Si.win
 ```
-for parallel computing on 6 CPU cores. "Si" is the name of your ".win" input file.
+for parallel computing on 6 CPU cores. "Si.win" is the name of your input file, which must have the extension of ".win". Instead, you can also neglect ".win" in the command. For "postw90.x", the command is similar.
 
