@@ -2,7 +2,7 @@
 
 ## About
 
-This respository gives a guidance of compiling **native, efficient and multi-core parallel** version of **Wannier90** code on Windows. However, similar as other programs in Windows (program compiled on one machine will likely work on all other Windows machines), you do not need to follow this procedure yourself. Rather, **download the binary (compiled) program from the release page** and you can use it directly on your Windows machine. We have tested it on several windows computers and it worked well, but in case it does not work, please file an issue on this repository.
+This respository gives a guidance of compiling **native, efficient and multi-core parallel** version of **Wannier90** code on Windows. However, similar as other programs in Windows (program compiled on one machine will likely work on all other Windows machines), you do not need to follow this procedure yourself. Rather, **download the [binary (compiled) program](https://github.com/quantumNerd/Wannier90_for_Windows/releases/download/3.1.0-win-x64/wannier90-3.1.0_windows_x64_parallel.7z) from the release page** and you can use it directly on your Windows machine. We have tested it on several windows computers and it worked well, but in case it does not work, please file an issue on this repository.
 
 ## Folder structure of the download
 
@@ -34,3 +34,6 @@ mpiexec.exe -np 6 wannier90.x Si.win
 ```
 for parallel computing on 6 CPU cores. "Si.win" is the name of your input file, which must have the extension of ".win". Instead, you can also neglect ".win" in the command. For "postw90.x", the command is similar.
 
+# Compilaion procedure (only for advanced user)
+
+Please refer to the pdf file in the repository for the detailed steps to compile Wannier90 on windows. The result will be the same as in the download.
